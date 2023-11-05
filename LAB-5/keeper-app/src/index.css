@@ -1,0 +1,19 @@
+/* src/index.css */
+
+/* Apply global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* You can add more global styles or customize it as per your project's design requirements. */
+  

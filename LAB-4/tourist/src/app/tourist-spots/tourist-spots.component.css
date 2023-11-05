@@ -1,0 +1,109 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-decoration: underline; /* Add underline */
+    color: purple; /* Change text color to purple */
+    margin: 0;
+    padding: 10px 20px;
+  }
+  
+  .search-bar {
+    background-color: rgb(137, 61, 164);
+    border-radius: 0;
+    padding: 10px 20px; /* Add padding to create space from the left and top edges */
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+  }
+  
+  .spot-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .spot-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .spot-plate {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 560px; /* Set the width for larger squares */
+    height: 560px; /* Set the height to the same value for a square shape */
+    justify-content: space-between; /* Align content in the plate */
+  }
+  .spot-plate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .spot-image {
+    width: 100%; /* Use width instead of height to cover the upper half */
+    height: 50%; /* Make the image cover the upper half */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 15px 15px 0 0; /* Rounded top edges */
+  }
+  
+  .spot-name {
+    font-weight: bold;
+    margin: 5px 0; /* Adjust margin */
+  }
+  
+  .spot-location {
+    color: #777;
+    margin: 5px 0; /* Adjust margin */
+  }
+  
+  .learn-more-button {
+    background-color: violet;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0; /* Remove border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #551A8B;
+  }
+  
+  .search-button {
+    background-color: violet;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #551A8B;
+  }
+  
