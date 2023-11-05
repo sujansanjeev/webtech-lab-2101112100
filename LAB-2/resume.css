@@ -1,0 +1,21 @@
+/* Apply styles to the entire body of the page */
+body {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    font-family: Arial, sans-serif; /* Use Arial or a sans-serif font */
+}
+
+/* Apply styles to heading elements (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+    color: #007bff; /* Set the text color to a shade of blue (#007bff) */
+}
+
+/* Apply styles to paragraph elements */
+p {
+    color: #ff9900; /* Set the text color to a shade of orange (#ff9900) */
+}
+
+/* Apply styles to list items within ordered lists */
+ol li {
+    color: #333333; /* Set the text color to a shade of gray (#333333) */
+}
