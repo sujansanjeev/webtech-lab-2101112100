@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+$mainFont: 'Rubik', sans-serif;
+
+nav {
+  padding: 5px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  #NavContentWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    #TopLogo {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    #Others {
+      li {
+        &:last-child {
+          z-index: 15;
+        }
+      }
+    }
+    #Others,
+    #Models {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        margin: 0px 10px;
+        list-style: none;
+        cursor: pointer;
+        z-index: -1;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        #Bars {
+          cursor: pointer;
+          .line {
+            width: 25px;
+            height: 3px;
+            background: black;
+            margin: 4px 0px;
+          }
+        }
+      }
+    }
+    #SideNav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 300px;
+      background: white;
+      box-shadow: 1px 2px 5px black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      transform: translateX(100%);
+      z-index: -1;
+      transition: 0.3s;
+      li {
+        list-style: none;
+        margin: 10% 0px;
+        font-family: 'Rubik', sans-serif;
+        padding: 10px 0px;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    #Bars {
+      transition: 0.3s;
+      .line {
+        transition: 0.3s;
+      }
+    }
+  }
+}
+.NavOpen {
+  transform: translateX(0);
+}
+
+#SingleHomeOrCar {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  #ContentWrapper {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    #Desc {
+      text-align: center;
+      h2 {
+        font-size: 3rem;
+        color: #393c41;
+      }
+      p {
+        color: #6d7074;
+        padding: 5px 0px 0px 0px;
+        span {
+          border-bottom: 1px solid grey;
+        }
+      }
+    }
+    #Buttons {
+      display: flex;
+      align-items: center;
+      button {
+        background: #3c3d42;
+        padding: 10px 60px;
+        border-radius: 20px;
+        margin: 0px 10px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-family: $mainFont;
+        &:nth-child(2) {
+          background: #e2dedd;
+          color: #3c3d42;
+        }
+      }
+    }
+  }
+}
